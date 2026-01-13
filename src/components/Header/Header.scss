@@ -1,0 +1,137 @@
+.header {
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9ebf0;
+    padding: 18px 0;
+  }
+
+  &__left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__catalog {
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #9be198;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+
+    & span {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  &__select {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__basket,
+  &__link-account {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.4;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__wrapper-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+
+    &-item {
+      font-size: 16px;
+      line-height: 1.4;
+      cursor: pointer;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &-phone {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #000;
+      text-decoration: none;
+    }
+
+    &-button {
+      width: 170px;
+      padding: 12px 23px;
+      font-size: 14px;
+      line-height: 1.4;
+      background-color: #9be198;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__menu {
+    padding: 20px 0;
+
+    &-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    &-item {
+        font-size: 14px;
+        line-height: 1.4;
+        color: #6fc76c;
+        cursor: pointer;
+        position: relative;
+
+        &:not(:last-child)::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -15px;
+            background-color: #E9EBF0;
+            width: 1px;
+            height: 100%;
+        }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  padding: 100px 0;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header__left {
+  display: flex;
+  gap: 20px;
+}/*# sourceMappingURL=Header.css.map */
